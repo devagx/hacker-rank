@@ -1,4 +1,3 @@
 # HackerRank
 
-This respository contains my Kata Solutions from HackerRank.
-"# hacker-rank" 
+This respository contains my Kata Solutions for HackerRank.
