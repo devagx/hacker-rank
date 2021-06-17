@@ -119,7 +119,7 @@ public class PrioritiesTests {
     }
 
     @Test
-    void getStudents_GivenSameCGPAAndName_ReturnsListOfStudents_24() {
+    void getStudents_GivenSameCGPAAndName_ReturnsListOfStudents_25() {
         Priorities myPrioroties = new Priorities();
         List<String> events = new ArrayList<>();
         events.add("ENTER Alf 3.8 24");
