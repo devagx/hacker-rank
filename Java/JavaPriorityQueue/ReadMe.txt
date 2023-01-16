@@ -67,4 +67,4 @@ Samiha is added to Q. So, it contains (Shafaet, 3.7, 35) and (Samiha, 3.85, 36).
 Samiha is served as she has the highest CGPA. So, Q contains (Shafaet, 3.7, 35).
 Now, four more students are added to Q. So, it contains (Shafaet, 3.7, 35), (Ashley, 3.9, 42), (Maria, 3.6, 46), (Anik, 3.95, 49), and (Dan, 3.95, 50).
 Anik is served because though both Anil and Dan have the highest CGPA but Anik comes first when sorted in alphabetic order. So, Q contains (Dan, 3.95, 50), (Ashley, 3.9, 42), (Shafaet, 3.7, 35), and (Maria, 3.6, 46).
-As all events are completed, the name of each of the remaining students is printed on a new line
+As all events are completed, the name of each of the remaining students is printed on a new line.
