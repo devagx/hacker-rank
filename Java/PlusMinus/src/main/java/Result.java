@@ -25,13 +25,13 @@ public class Result {
                 }
             }
         }
-        BigDecimal bdPos = new BigDecimal(Double.toString(totalPosInts / totalArrValues));
+        BigDecimal bdPos = BigDecimal.valueOf(totalPosInts / totalArrValues);
         bdPos = bdPos.setScale(6, RoundingMode.HALF_UP);
 
-        BigDecimal bdNeg = new BigDecimal(Double.toString(totalalNegInts / totalArrValues));
+        BigDecimal bdNeg = BigDecimal.valueOf(totalalNegInts / totalArrValues);
         bdNeg = bdNeg.setScale(6, RoundingMode.HALF_UP);
 
-        BigDecimal bdZero = new BigDecimal(Double.toString(totalalZeroInts / totalArrValues));
+        BigDecimal bdZero = BigDecimal.valueOf(totalalZeroInts / totalArrValues);
         bdZero = bdZero.setScale(6, RoundingMode.HALF_UP);
 
         System.out.println(bdPos);
