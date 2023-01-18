@@ -3,7 +3,7 @@ import java.text.ParseException;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class TimeConversionTests {
+class TimeConversionTests {
     @Test
     void timeConversion_amPmTimeInput_returnsSingleStringWithLengthGreaterThanZeroAndNotNull() throws ParseException {
         String result = Result.timeConversion("12:00:00PM");
