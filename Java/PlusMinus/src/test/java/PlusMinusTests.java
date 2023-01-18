@@ -10,7 +10,7 @@ import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class PlusMinusTests {
+class PlusMinusTests {
     private final PrintStream standardOut = System.out;
     private final ByteArrayOutputStream outputStreamCaptor = new ByteArrayOutputStream();
 
@@ -41,7 +41,7 @@ public class PlusMinusTests {
         List<String> captorValues =
                 Arrays.stream(outputStreamCaptor.toString().trim().split("\\r?\\n")).toList();
 
-        assertThat(3).isEqualTo(captorValues.size());
+        assertThat(captorValues.size()).isEqualTo(3);
     }
 
     @Test
@@ -60,10 +60,10 @@ public class PlusMinusTests {
 
         captorValues.forEach((value) -> {
                     int numDecimalPlaces = String.valueOf(value).replaceAll(".*\\.", "").length();
-                    assertThat(6).isEqualTo(numDecimalPlaces);
+                    assertThat(numDecimalPlaces).isEqualTo(6);
                 }
         );
-        assertThat(3).isEqualTo(captorValues.size());
+        assertThat(captorValues.size()).isEqualTo(3);
     }
 
     @Test
@@ -85,7 +85,7 @@ public class PlusMinusTests {
         assertThat(captorValues.get(0)).isEqualTo("0.400000");
         assertThat(captorValues.get(1)).isEqualTo("0.400000");
         assertThat(captorValues.get(2)).isEqualTo("0.200000");
-        assertThat(3).isEqualTo(captorValues.size());
+        assertThat(captorValues.size()).isEqualTo(3);
     }
 
     @Test
@@ -108,6 +108,6 @@ public class PlusMinusTests {
         assertThat(captorValues.get(0)).isEqualTo("0.500000");
         assertThat(captorValues.get(1)).isEqualTo("0.333333");
         assertThat(captorValues.get(2)).isEqualTo("0.166667");
-        assertThat(3).isEqualTo(captorValues.size());
+        assertThat(captorValues.size()).isEqualTo(3);
     }
 }
