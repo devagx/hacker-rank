@@ -7,11 +7,10 @@ import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class MinMaxSumTests {
+class MinMaxSumTests {
     private final PrintStream standardOutput = System.out;
     private final ByteArrayOutputStream outputStreamCaptor = new ByteArrayOutputStream();
 
@@ -37,7 +36,7 @@ public class MinMaxSumTests {
 
         List<String> captorValues = Arrays.stream(outputStreamCaptor.toString().split("\\r?\\n")).toList();
 
-        assertThat(1).isEqualTo(captorValues.size());
+        assertThat(captorValues.size()).isEqualTo(1);
     }
 
     @Test
@@ -55,11 +54,11 @@ public class MinMaxSumTests {
         String[] captorValuesSplit = outputStreamCaptor.toString().trim().split(" ");
 
         for (String captorSplitValue : captorValuesSplit) {
-            assertThat(isNumericLong(captorSplitValue)).isEqualTo(true);
+            assertThat(isNumericLong(captorSplitValue)).isTrue();
         }
 
-        assertThat(2).isEqualTo(captorValuesSplit.length);
-        assertThat(1).isEqualTo(captorValues.size());
+        assertThat(captorValuesSplit.length).isEqualTo(2);
+        assertThat(captorValues.size()).isEqualTo(1);
     }
 
     @Test
