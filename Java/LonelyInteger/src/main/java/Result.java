@@ -19,7 +19,6 @@ public class Result {
                     return inputValues.get(i);
                 }
             } else if (i == inputValues.size() - 1) {
-
                 return inputValues.get(i);
             } else if (!(inputValues.get(i).equals(inputValues.get(i - 1))) &&
                     !Objects.equals(inputValues.get(i), inputValues.get(i + 1)) && (i != inputValues.size() - 1)) {

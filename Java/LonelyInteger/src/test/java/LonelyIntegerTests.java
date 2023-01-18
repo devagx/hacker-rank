@@ -101,6 +101,4 @@ class LonelyIntegerTests {
 
         assertThat(result).isEqualTo(2);
     }
-
-
 }
