@@ -24,10 +24,14 @@ public class Solution {
             }
         });
 
-//        int result = Result.diagonalDifference(arr);
-//
-//        System.out.println(String.valueOf(result));
+        int result = Result.diagonalDifference(arr);
+
+        System.out.println(String.valueOf(result));
 
         bufferedReader.close();
     }
 }
+
+
+
+
