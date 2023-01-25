@@ -31,3 +31,23 @@ public class Result {
         return Math.abs(leftToRightSum - rightToLeftSum);
     }
 }
+
+//ALTERNATIVE SOLUTION
+
+//    public static int diagonalDifference(List<List<Integer>> listOfLists) {
+//        int leftDiagonal = 0;
+//        int rightDiagonal = 0;
+//
+//        for (int ol = 0; ol < listOfLists.size(); ol++) {
+//            for (int il = 0; il < listOfLists.get(ol).size(); il++) {
+//                if (ol == il) {
+//                    leftDiagonal += listOfLists.get(ol).get(il);
+//                }
+//                if ((ol + il) == (listOfLists.size() - 1)) {
+//                    rightDiagonal += listOfLists.get(ol).get(il);
+//                }
+//            }
+//        }
+//        return Math.abs(leftDiagonal - rightDiagonal);
+//    }
+//}
