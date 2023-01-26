@@ -26,11 +26,3 @@ public class Result {
         return outputArray;
     }
 }
-
-/*
---  Sort input array inc
--- create outputArray with size of last position of input array
-
---LOOP INPUT ARRAY
-    -set value of output array at position i with value of input array at position i
- */
