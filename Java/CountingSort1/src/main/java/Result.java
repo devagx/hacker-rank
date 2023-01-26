@@ -9,7 +9,6 @@ public class Result {
     }
 
     public static List<Integer> countingSort(List<Integer> inputArray) {
-        Collections.sort(inputArray);
 
         List<Integer> outputArray = new ArrayList<>();
 
