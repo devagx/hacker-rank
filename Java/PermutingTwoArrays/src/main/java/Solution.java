@@ -29,9 +29,9 @@ public class Solution {
                         .map(Integer::parseInt)
                         .collect(toList());
 
-//                String result = Result.twoArrays(k, A, B);
-//
-//                System.out.println(result);
+                String result = Result.twoArrays(k, A, B);
+
+                System.out.println(result);
 
             } catch (IOException ex) {
                 throw new RuntimeException(ex);
