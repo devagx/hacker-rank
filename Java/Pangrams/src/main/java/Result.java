@@ -17,10 +17,6 @@ public class Result {
             nonDupChars.add(val);
         }
 
-        if (nonDupChars.size() == 26) {
-            return "pangram";
-        } else {
-            return "not pangram";
-        }
+        return (nonDupChars.size() == 26) ? "pangram" : "not pangram";
     }
 }
