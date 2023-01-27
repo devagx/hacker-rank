@@ -19,4 +19,21 @@ public class Result {
 
         return (nonDupChars.size() == 26) ? "pangram" : "not pangram";
     }
+
+    //ALTERNATIVE APPROACH
+
+//    public static String pangrams(String input) {
+//        input = input.replaceAll(
+//                "[^a-zA-Z]", "");
+//
+//        input = input.toLowerCase();
+//
+//        Character[] inputChars = new String(input.toCharArray()).chars()
+//                .mapToObj(c -> (char) c)
+//                .toArray(Character[]::new);
+//
+//        Set<Character> nonDupChars = new HashSet<>(Arrays.asList(inputChars));
+//
+//        return (nonDupChars.size() == 26) ? "pangram" : "not pangram";
+//    }
 }
