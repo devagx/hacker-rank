@@ -8,9 +8,9 @@ public class Solution {
 
         String s = bufferedReader.readLine();
 
-//        String result = Result.pangrams(s);
-//
-//        System.out.println(result);
+        String result = Result.pangrams(s);
+
+        System.out.println(result);
 
         bufferedReader.close();
     }
