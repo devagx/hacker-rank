@@ -16,7 +16,7 @@ public class Result {
 
         for (int s = 0; s < squaresSize; s++) {
             for (int m = 0; m < month; m++) {
-                if (s + m < squaresSize && ((squaresSize - s) >= month)) {
+                if (((squaresSize - s) >= month)) {
                     sumOfSegment += squares.get(s + m);
                 }
             }
