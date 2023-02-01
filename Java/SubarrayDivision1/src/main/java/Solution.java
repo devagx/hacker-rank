@@ -22,9 +22,9 @@ public class Solution {
 
         int m = Integer.parseInt(firstMultipleInput[1]);
 
-//        int result = Result.birthday(s, d, m);
-//
-//        System.out.println(String.valueOf(result));
+        int result = Result.birthday(s, d, m);
+
+        System.out.println(String.valueOf(result));
 
         bufferedReader.close();
     }
