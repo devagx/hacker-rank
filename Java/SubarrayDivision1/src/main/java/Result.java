@@ -21,7 +21,7 @@ public class Result {
                 }
             }
             if (sumOfSegment == day) {
-                result += 1;
+                result++;
             }
             sumOfSegment = 0;
         }
