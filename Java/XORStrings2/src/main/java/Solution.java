@@ -12,4 +12,14 @@ public class Solution {
 
         System.out.println(result);
     }
+    //ALTERNATIVE SOLUTION
+//    public static void main(String[] args) {
+//
+//        String s, t;
+//        Scanner in = new Scanner(System.in);
+//        s = in.nextLine();
+//        t = in.nextLine();
+//        System.out.println(stringsXOR(s, t));
+//        in.close();
+//    }
 }
