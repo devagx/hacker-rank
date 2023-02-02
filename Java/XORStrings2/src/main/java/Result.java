@@ -13,18 +13,13 @@ public class Result {
         }
 
         StringBuilder result = new StringBuilder();
-
         Pattern p = Pattern.compile("[0-1]+");
-
         Matcher m1 = p.matcher(input1);
         Matcher m2 = p.matcher(input2);
 
         if (m1.matches() && m2.matches()) {
             for (int i = 0; i < input1.length(); i++) {
-                char input1C = input1.charAt(i);
-                char input2C = input2.charAt(i);
-
-                if (input1C == input2C) {
+                if (input1.charAt(i) == input2.charAt(i)) {
                     result.append("0");
                 } else {
                     result.append("1");
