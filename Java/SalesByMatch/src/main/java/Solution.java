@@ -16,9 +16,9 @@ public class Solution {
                 .map(Integer::parseInt)
                 .collect(toList());
 
-        //int result = Result.sockMerchant(n, ar);
+        int result = Result.sockMerchant(n, ar);
 
-        //System.out.println(String.valueOf(result));
+        System.out.println(String.valueOf(result));
 
         bufferedReader.close();
     }
