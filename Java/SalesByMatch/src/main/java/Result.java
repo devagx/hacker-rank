@@ -36,3 +36,37 @@ public class Result {
         return (int) pairs;
     }
 }
+
+/*
+ALTERNATIVE SOLUTIONS
+
+//    public static int sockMerchant(int arrSize, List<Integer> sockIds) {
+//        Map<Integer, Integer> sockCounts = new HashMap<>();
+//
+//        for (int sockId : sockIds) {
+//            int currentCount = sockCounts.getOrDefault(sockId, 0);
+//            sockCounts.put(sockId, currentCount + 1);
+//        }
+//
+//        int pairs = 0;
+//        for (int count : sockCounts.values()) {
+//            pairs += (count / 2);
+//        }
+//        return pairs;
+//    }
+
+//    public static int sockMerchant(int arrSize, List<Integer> sockIds) {
+//        Set<Integer> unmatchedSocks = new HashSet<>();
+//
+//        int pairs = 0;
+//        for (int sockId : sockIds) {
+//            if (unmatchedSocks.contains(sockId)) {
+//                unmatchedSocks.remove(sockId);
+//                pairs++;
+//            } else {
+//                unmatchedSocks.add(sockId);
+//            }
+//        }
+//        return pairs;
+//    }
+ */
