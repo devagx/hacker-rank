@@ -15,6 +15,20 @@ public class Result {
         int numPagesToTurnFromTotal = (totalPages - destinationPage) / 2;
 
 
-        return (numPagesToTurnFrom1 <= numPagesToTurnFromTotal) ? numPagesToTurnFrom1 : numPagesToTurnFromTotal;
+        return Math.min(numPagesToTurnFrom1, numPagesToTurnFromTotal);
     }
+
+    /*
+    ALTERNATIVE SOLUTION
+
+    public static int pageCount(int n, int p) {
+
+
+        int totalPageTurnCountFromFront = n / 2;
+        int targetPageTurnCountFromFront = p / 2;
+        int targetPageTurnCountFromBack = totalPageTurnCountFromFront - targetPageTurnCountFromFront;
+
+        return Math.min(targetPageTurnCountFromFront, targetPageTurnCountFromBack);
+    }
+     */
 }
