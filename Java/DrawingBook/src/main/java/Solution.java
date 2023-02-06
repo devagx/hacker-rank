@@ -10,9 +10,9 @@ public class Solution {
 
         int p = Integer.parseInt(bufferedReader.readLine().trim());
 
-        //int result = Result.pageCount(n, p);
+        int result = Result.pageCount(n, p);
 
-        //System.out.println(String.valueOf(result));
+        System.out.println(String.valueOf(result));
 
         bufferedReader.close();
     }
