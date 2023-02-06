@@ -10,7 +10,7 @@ public class Solution {
             for (int i = 0; i < n; i++) {
                 a[i] = kb.nextInt();
             }
-            //findZigZagSequence(a, n);
+            Result.findZigZagSequence(a, n);
         }
     }
 }
