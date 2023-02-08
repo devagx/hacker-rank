@@ -12,9 +12,9 @@ public class Solution {
 
         int k = Integer.parseInt(bufferedReader.readLine().trim());
 
-        //String result = Result.caesarCipher(s, k);
+        String result = Result.caesarCipher(s, k);
 
-        //System.out.println(result);
+        System.out.println(result);
 
         bufferedReader.close();
     }
