@@ -15,9 +15,9 @@ public class Solution {
 
             int m = Integer.parseInt(firstMultipleInput[1]);
 
-            //int result = Result.towerBreakers(n, m);
+            int result = Result.towerBreakers(n, m);
 
-            //System.out.println(String.valueOf(result));
+            System.out.println(String.valueOf(result));
         }
 
         bufferedReader.close();
