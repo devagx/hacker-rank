@@ -6,9 +6,7 @@ public class Result {
     public static String caesarCipher(String input, int rotations) {
         String origAlphabet = "abcdefghijklmnopqrstuvwxyz".toUpperCase();
 
-        if (rotations > 26) {
-            rotations = rotations % 26;
-        }
+        rotations = rotations % 26;
 
         StringBuilder alphaRotatedBuilder = new StringBuilder(origAlphabet);
         String charsToShit = alphaRotatedBuilder.substring(0, rotations);
