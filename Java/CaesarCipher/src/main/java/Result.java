@@ -29,4 +29,32 @@ public class Result {
         }
         return result.toString();
     }
+// ALTERNATIVE SOLUTION
+//    public static String caesarCipher(String input, int rotations) {
+//
+//        String str = "";
+//        for (int i = 0; i < input.length(); i++) {
+//            str = str + getUpdatedAsciiChar(input.charAt(i), rotations%26);
+//        }
+//        return str;
+//    }
+//
+//    public static char getUpdatedAsciiChar(char ch, int incremental) {
+//        if (Character.isLetter(ch)) {
+//            int i = (int) ch;
+//            i = i + incremental;
+//
+//            if (Character.isUpperCase(ch)) {
+//                if (i > 90) {
+//                    int num = (int) ch + incremental;
+//                    i = num - 26;
+//                }
+//            } else if (i > 122) {
+//                int num = (int) ch + incremental;
+//                i = num - 26;
+//            }
+//            return (char) i;
+//        }
+//        return ch;
+//    }
 }
