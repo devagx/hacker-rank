@@ -26,4 +26,14 @@ public class Result {
         }
         return result;
     }
+//ALTERNATIVE SOLUTION
+
+//    public static int maxMin(int groupSize, List<Integer> arr) {
+//        Collections.sort(arr);
+//
+//        int min = Integer.MAX_VALUE;
+//        for (int i = 0; i <= arr.size() - groupSize; i++)
+//            min = Math.min(min, arr.get(groupSize + i - 1) - arr.get(i));
+//        return min;
+//    }
 }
