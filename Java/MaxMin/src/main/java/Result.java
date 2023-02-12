@@ -21,7 +21,6 @@ public class Result {
                 result = max - min;
 
             }
-
         }
         return result;
     }
