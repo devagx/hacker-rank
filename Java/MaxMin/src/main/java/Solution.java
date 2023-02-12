@@ -8,7 +8,6 @@ public class Solution {
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
-
         int n = Integer.parseInt(bufferedReader.readLine().trim());
 
         int k = Integer.parseInt(bufferedReader.readLine().trim());
@@ -20,9 +19,9 @@ public class Solution {
             arr.add(arrItem);
         }
 
-        //int result = Result.maxMin(k, arr);
+        int result = Result.maxMin(k, arr);
 
-        //System.out.println(String.valueOf(result));
+        System.out.println(String.valueOf(result));
 
         bufferedReader.close();
 
