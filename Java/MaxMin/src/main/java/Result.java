@@ -11,18 +11,17 @@ public class Result {
         Collections.sort(arr);
 
         int result = 0;
-        for (int i = 0; i < arr.size(); i++) {
-            if (i <= (arr.size() - groupSize)) {
-                int min = arr.get(i);
-                int max = arr.get(i + groupSize - 1);
+        for (int i = 0; i <= arr.size() - groupSize; i++) {
+            int min = arr.get(i);
+            int max = arr.get(i + groupSize - 1);
 
-                if (i == 0) {
-                    result = max - min;
-                } else if ((max - min) < result) {
-                    result = max - min;
+            if (i == 0) {
+                result = max - min;
+            } else if ((max - min) < result) {
+                result = max - min;
 
-                }
             }
+
         }
         return result;
     }
