@@ -25,9 +25,10 @@ public class Solution {
                         })
                         .collect(toList());
 
-                //String result = Result.gridChallenge(grid);
+                String result = Result.gridChallenge(grid);
 
-                // System.out.println(result);
+                System.out.print(result);
+                System.out.println("");
 
             } catch (IOException ex) {
                 throw new RuntimeException(ex);
