@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
+import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
 public class Solution {
@@ -32,14 +33,14 @@ public class Solution {
             }
         });
 
-//        List<Integer> result = Result.dynamicArray(n, queries);
-//
-//        bufferedWriter.write(
-//                result.stream()
-//                        .map(Object::toString)
-//                        .collect(joining("\n"))
-//                        + "\n"
-//        );
+        List<Integer> result = Result.dynamicArray(n, queries);
+
+        System.out.println(
+                result.stream()
+                        .map(Object::toString)
+                        .collect(joining("\n"))
+                        + "\n"
+        );
 
         bufferedReader.close();
 
