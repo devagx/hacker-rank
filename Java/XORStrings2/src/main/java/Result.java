@@ -14,10 +14,8 @@ public class Result {
 
         StringBuilder result = new StringBuilder();
         Pattern p = Pattern.compile("[0-1]+");
-        Matcher m1 = p.matcher(input1);
-        Matcher m2 = p.matcher(input2);
 
-        if (m1.matches() && m2.matches()) {
+        if (p.matcher(input1).matches() && p.matcher(input2).matches()) {
             for (int i = 0; i < input1.length(); i++) {
                 if (input1.charAt(i) == input2.charAt(i)) {
                     result.append("0");
