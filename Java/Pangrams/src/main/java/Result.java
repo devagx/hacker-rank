@@ -1,4 +1,5 @@
 import java.util.HashSet;
+import java.util.Set;
 
 public class Result {
     private Result() {
@@ -11,7 +12,7 @@ public class Result {
 
         input = input.toLowerCase();
 
-        HashSet<Character> nonDupChars = new HashSet<>();
+        Set<Character> nonDupChars = new HashSet<>();
 
         for (char val : input.toCharArray()) {
             nonDupChars.add(val);
